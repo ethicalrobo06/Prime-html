@@ -1,0 +1,44 @@
+.dropdown:hover {
+  border: 2px violet solid;
+  background-color: rgb(25, 30, 37);
+}
+.dropdown .svg-ico {
+  position: absolute;
+  top: 14px;
+  left: 150px;
+}
+
+.dropdown .svg-ico:hover {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+.dropdown .menu {
+  display: none;
+}
+
+.dropdown .menu {
+  z-index: 1;
+  color: rgb(55 65 81 / var(1));
+  width: 100px;
+  height: fit-content;
+  border-radius: 5px;
+  border: none;
+  position: absolute;
+  top: 44px;
+  text-align: left;
+  left: 88px;
+  display: none;
+}
+
+.dropdown:hover > .menu {
+  display: block !important;
+}
+
+.dropdown .main-menu li {
+  color: #aaaaaa;
+  background-color: rgb(25, 30, 37);
+}
+.dropdown .main-menu li:hover {
+  color: #aaaaaa;
+  background-color: white;
+}

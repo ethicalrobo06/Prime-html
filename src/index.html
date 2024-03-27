@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Prime Video</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet" />
+  </head>
+  <body class="font-sans">
+    <!-- Header starts here -->
+    <header
+      class="bg-[rgb(0,5,13)] relative items-center w-[100%] h-[48px] flex flex-row"
+    >
+      <div class="absolute flex items-center">
+        <div class="absolute flex left-[280px] w-[104px]">
+          <img
+            class="w-[100%] h-[19.5px]"
+            src="prime-image/prime-header.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="w-[424px] h-[44px] absolute text-center text-[18px] text-gray-700 font-medium justify-center items-center left-[390px] flex ml-[50px]"
+        >
+          <div
+            class="relative inline-block group mr-10 hover:cursor-pointer text-[#AAAAAA] hover:text-white"
+          >
+            <button class="dropdown-btn">
+              Home
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+                />
+              </svg>
+            </button>
+            <div
+              class="absolute group-hover:block hidden z-10 border-none bg-black"
+            >
+              <a class="block py-2 px-4 text-gray-700 no-underline" href="#"
+                >All
+              </a>
+              <a class="block py-2 px-4 text-gray-700 no-underline" href="#"
+                >Movies</a
+              >
+              <a class="block py-2 px-4 text-gray-700 no-underline" href="#"
+                >TV shows</a
+              >
+            </div>
+          </div>
+          <div
+            class="dropdown flex mr-10 hover:cursor-pointer text-[#AAAAAA] hover:text-white"
+          >
+            Store
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi svg-ico bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+            <div class="menu">
+              <ul class="main-menu">
+                <li>All</li>
+                <li>Rent</li>
+                <li>Channels</li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="flex mr-10 hover:cursor-pointer text-[#AAAAAA] hover:text-white"
+          >
+            Live TV
+          </div>
+          <div
+            class="flex mr-10 hover:cursor-pointer text-[#AAAAAA] hover:text-white"
+          >
+            Categories
+          </div>
+        </div>
+        <div
+          class="flex absolute left-[930px] justify-center items-center text-[18px] h-[48px] font-medium w-[320px] text-center"
+        >
+          <div class="flex mr-[50px] absolute w-[100%]">
+            <img
+              class="h-[21px] w-[24px]"
+              src="prime-image/search-logo.svg"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex mr-[50px] hover:cursor-pointer text-[#AAAAAA] hover:text-white text-[18px]"
+          >
+            Try for free
+          </div>
+          <div
+            class="flex mr-[50px] hover:cursor-pointer text-[#AAAAAA] hover:text-white text-[18px]"
+          >
+            EN
+          </div>
+          <div class="flex h-[48px] w-[64px] pt-[6px]">
+            <img class="h-[36px]" src="prime-image/account-logo.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Welcome starts -->
+    <div class="bg-black">
+      <section class="w-[100%] h-[100vh]">
+        <div class="absolute right-0 z-1">
+          <img src="prime-image/header-image.jpg" alt="" />
+        </div>
+        <div class="ml-[40px] absolute pt-[24px] z-2 text-white">
+          <h1 class="text-[44.8px] mb-[10px]">Welcome to Prime Video</h1>
+          <p class="text-[24px]">
+            Watch the latest movies, TV Shows, and award-winning Amazon <br />
+            Originals
+          </p>
+          <button
+            class="border-none rounded-[3px] mt-[18px] hover:bg-[#00A0D6] bg-[#0F79AF] pl-[14px] pr-[14px] pt-[14px] pb-[20px] font-medium items-start text-center w-[280px] h-[48px]"
+          >
+            <span class="text-[17px]">Sign in to join Prime</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Movie rentals on prime starts -->
+      <section class="w-[100%] h-[440px]">
+        <div class="absolute"></div>
+        <div class="absolute right-0 top-[565px] z-20">
+          <img src="prime-image/header-down-image.jpg" alt="" />
+        </div>
+        <div class="text-white absolute top-[710px] z-30 ml-[40px]">
+          <h1 class="text-[40px] mb-[18px]">Movie rentals on Prime Video</h1>
+          <p class="text-[21px] mb-[36px]">
+            Early Access to new movies, before digital subscription
+          </p>
+          <button
+            class="rounded-[3px] border-none bg-[#0F79AF] pl-[14px] pr-[14px] pt-[14px] pb-[20px] font-medium items-start text-center w-[280px] h-[48px]"
+          >
+            <span class="text-[17px]">Rent now</span>
+          </button>
+        </div>
+        <div
+          class="bg-white absolute z-40 w-[100%] top-[1066px] h-[180px]"
+        ></div>
+      </section>
+    </div>
+
+    <!-- favourite channels section -->
+    <div class="relative w-[100%] top-[-171px] h-[648px] z-50 bg-white">
+      <div
+        class="absolute justify-around justify-items-start w-[684.362px] h-[637.15px] flex flex-row flex-wrap leading-[20px] right-[75px] z-30 box-border"
+      >
+        <div class="flex flex-row">
+          <div class="m-[3px] duration-[0.2] flex grow shrink box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/lionsgate.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow shrink box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/discovery.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow shrink box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/bbc-player.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/manorama-max.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/hoichoi.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/chaupal.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/amc.png"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/erosnow.jpg"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/mubi.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-row">
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/Vrottin.png"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/stringray.png"
+              alt=""
+            />
+          </div>
+          <div class="m-[3px] duration-[0.2] flex grow box-border">
+            <img
+              class="w-[222.125px] h-[153.288px] hover:shadow-[0px_1px_6px_4px_#333] align-top"
+              src="prime-image/docubay.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="absolute left-[80px] top-[14px] w-[700px] z-40">
+        <h1
+          class="text-[44.8px] text-opacity-60 font-normal leading-[49.6px] w-[600px] mb-[30px]"
+        >
+          Your favourite channels all in one place
+        </h1>
+        <p class="text-[24px] text-[#101010] leading-[28.8px]">
+          With Prime Video Channels, find shows and movies from your favourite
+          channels all in one place. Enjoy with an add- on subscription to
+          Channels of your choice
+        </p>
+      </div>
+    </div>
+
+    <!-- Fire stick section starts -->
+    <section class="relative w-[100%] h-[700px] top-[-172px] z-[50]">
+      <div class="absolute z-1 w-[100%]">
+        <img class="w-[100%]" src="prime-image/fire-stick.jpg" alt="" />
+      </div>
+
+      <div class="absolute w-[40%] top-[70px] right-[68px] z-3 text-white">
+        <h1 class="text-[40px] mb-[16px] font-normal">
+          Even better with Fire TV Stick
+        </h1>
+        <p class="text-[21px] mb-[30px]">
+          The biggest movies and TV shows are always better on a big screen.
+          Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press
+          the voice button on the remote and say the name of the title you want
+          to watch to find it in seconds.
+        </p>
+        <button
+          class="w-[280px] h-[54.1px] duration-[0.2s] rounded-[2px] border-none bg-[#0F79AF]"
+        >
+          <span class="text-[17px]">Get started</span>
+        </button>
+      </div>
+      <div class="absolute bottom-0 h-[176px] w-[100%] bg-black"></div>
+    </section>
+
+    <!-- Family Friendly section starts -->
+    <section class="relative w-[100%] h-[330px] top-[-350px] z-[70]">
+      <div class="absolute w-[100%] z-[70] object-fill">
+        <img
+          class="w-[100%] h-[670px]"
+          src="prime-image/kids-tab.jpg"
+          width="100%"
+          alt=""
+        />
+      </div>
+      <div class="w-[40%] text-white z-[71] absolute top-[92px] left-[84px]">
+        <h1 class="text-[40px] mb-[16px] font-normal">Family Friendly</h1>
+        <p class="text-[21px] mb-[30px]">
+          With easy to use Parental Controls and a dedicated kids page, enjoy
+          secure, ad-free kids entertainment. Kids can enjoy popular TV shows
+          like Peppa Pig, Powerpuff Girls, and Chhota Bheem.
+        </p>
+        <button class="w-[280px] h-[54.1px] border-none bg-[#0F79AF]">
+          <span class="text-[17px]">Get started</span>
+        </button>
+      </div>
+
+      <!-- Footer starts -->
+      <footer
+        class="absolute w-[100%] h-[140px] text-center justify-center text-[15px] top-[552px] bg-[#222222] z-[73]"
+      >
+        <img
+          class="align-top ml-[46%] absolute top-[22px] max-w-[100%]"
+          src="prime-image/prime-logo.png"
+          alt=""
+        />
+        <div
+          class="text-[#0f79af] relative mr-[15px] flex flex-row justify-center top-[56px]"
+        >
+          <div>Terms and Privacy Notice</div>
+          <div class="mr-[19px] ml-[20px]">Send us feedback</div>
+          <div>Help</div>
+        </div>
+        <div class="text-[#949494] relative left-[-8px] text-[15px] top-[56px]">
+          &#169; 1996-2023, Amazon.com, Inc. or its affiliates
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
